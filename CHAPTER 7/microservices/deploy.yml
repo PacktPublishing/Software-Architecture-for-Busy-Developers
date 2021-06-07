@@ -1,0 +1,105 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: bus
+  namespace: microserviceapp
+spec:
+  type: pubsub.rabbitmq
+  version: v1
+  metadata:
+  - name: host
+    value: "amqp://user:pwd@rabbitmq.default.svc.cluster.local:5672"
+  - name: durable
+    value: "false"
+  - name: deletedWhenUnused
+    value: "false"
+  - name: autoAck
+    value: "false"
+  - name: deliveryMode
+    value: "0"
+  - name: requeueInFailure
+    value: "false"
+  - name: prefetchCount
+    value: "0"
+  - name: reconnectWait
+    value: "0"
+  - name: concurrencyMode
+    value: parallel
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orderprocessing
+  namespace: microserviceapp
+  labels:
+    app: orderprocessing
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: orderprocessing
+  template:
+    metadata:
+      labels:
+        app: orderprocessing
+      annotations:
+        dapr.io/enabled: "true"
+        dapr.io/app-id: "orderprocessing"
+        dapr.io/app-port: "80"
+    spec:
+      containers:
+      - name: orderprocessing
+        image: stephaneey/orderprocessing:dev        
+        imagePullPolicy: Always
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orderquery
+  namespace: microserviceapp
+  labels:
+    app: orderquery
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: orderquery
+  template:
+    metadata:
+      labels:
+        app: orderquery
+      annotations:
+        dapr.io/enabled: "true"
+        dapr.io/app-id: "orderquery"
+        dapr.io/app-port: "80"
+    spec:
+      containers:
+      - name: orderquery
+        image: stephaneey/orderquery:dev        
+        imagePullPolicy: Always
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: shippingprocessing
+  namespace: microserviceapp
+  labels:
+    app: shippingprocessing
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: shippingprocessing
+  template:
+    metadata:
+      labels:
+        app: shippingprocessing
+      annotations:
+        dapr.io/enabled: "true"
+        dapr.io/app-id: "shippingprocessing"
+        dapr.io/app-port: "80"
+    spec:
+      containers:
+      - name: shippingprocessing
+        image: stephaneey/shippingprocessing:dev        
+        imagePullPolicy: Always

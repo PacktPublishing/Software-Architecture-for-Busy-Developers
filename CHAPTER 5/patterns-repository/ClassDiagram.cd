@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="patterns_repository.BaseRepository&lt;T&gt;" Collapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAQEAAAAAAAAEAAAAAAAgAAAAAAAAAIIA=</HashCode>
+      <FileName>BaseRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="patterns_repository.DemoContext" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DemoContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="patterns_repository.DemoEntity" Collapsed="true">
+    <Position X="13" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgE=</HashCode>
+      <FileName>DemoEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="patterns_repository.DemoRepository" Collapsed="true">
+    <Position X="7" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DemoRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="patterns_repository.Controllers.DemoController" Collapsed="true">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\DemoController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="patterns_repository.IAsyncRepository&lt;T&gt;" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQEAAAAAAAAEAAAAAAAgAAAAAAAAAIIA=</HashCode>
+      <FileName>IAsyncRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="patterns_repository.IDemoRepository" Collapsed="true">
+    <Position X="4" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IDemoRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

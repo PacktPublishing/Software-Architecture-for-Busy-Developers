@@ -1,0 +1,164 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\steph\\Source\\Repos\\packt-software-architecture\\CHAPTER05\\patterns-dependency-injection-ut\\patterns-dependency-injection-ut.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\steph\\Source\\Repos\\packt-software-architecture\\CHAPTER05\\patterns-dependency-injection-ut\\patterns-dependency-injection-ut.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\steph\\Source\\Repos\\packt-software-architecture\\CHAPTER05\\patterns-dependency-injection-ut\\patterns-dependency-injection-ut.csproj",
+        "projectName": "patterns-dependency-injection-ut",
+        "projectPath": "C:\\Users\\steph\\Source\\Repos\\packt-software-architecture\\CHAPTER05\\patterns-dependency-injection-ut\\patterns-dependency-injection-ut.csproj",
+        "packagesPath": "C:\\Users\\steph\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\steph\\Source\\Repos\\packt-software-architecture\\CHAPTER05\\patterns-dependency-injection-ut\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\steph\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://stephaneey.pkgs.visualstudio.com/IaC/_packaging/nugetpvfeed/nuget/v3/index.json": {},
+          "https://stephaneey.pkgs.visualstudio.com/_packaging/apim/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\steph\\Source\\Repos\\packt-software-architecture\\CHAPTER05\\patterns-dependency-injection\\patterns-dependency-injection.csproj": {
+                "projectPath": "C:\\Users\\steph\\Source\\Repos\\packt-software-architecture\\CHAPTER05\\patterns-dependency-injection\\patterns-dependency-injection.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNet.WebApi.Core": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.16.1, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.extensibility.core": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\steph\\Source\\Repos\\packt-software-architecture\\CHAPTER05\\patterns-dependency-injection\\patterns-dependency-injection.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\steph\\Source\\Repos\\packt-software-architecture\\CHAPTER05\\patterns-dependency-injection\\patterns-dependency-injection.csproj",
+        "projectName": "patterns-dependency-injection",
+        "projectPath": "C:\\Users\\steph\\Source\\Repos\\packt-software-architecture\\CHAPTER05\\patterns-dependency-injection\\patterns-dependency-injection.csproj",
+        "packagesPath": "C:\\Users\\steph\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\steph\\Source\\Repos\\packt-software-architecture\\CHAPTER05\\patterns-dependency-injection\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\steph\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://stephaneey.pkgs.visualstudio.com/IaC/_packaging/nugetpvfeed/nuget/v3/index.json": {},
+          "https://stephaneey.pkgs.visualstudio.com/_packaging/apim/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
