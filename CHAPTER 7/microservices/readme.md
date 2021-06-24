@@ -17,11 +17,12 @@ Note that I used the runtime version 1.0.1. Feel free to use a more recent runti
 # Installing RabbitMQ and retrieving the default password
 To be cloud-neutral, I used a self-hosted RabbitMQ instance. To install it in your cluster:
 
-`helm install --namespace microserviceapp`
+`helm repo update` 
+`helm install rabitmq stable/rabbitmq`
 
 To retrieve the default password, run the following commands:
 
-`$pwd=kubectl get secret --namespace default rabbitmq -o jsonpath="{.data.rabbitmq-password}"`
+`$pwd=kubectl get secret --namespace microserviceapp rabbitmq -o jsonpath="{.data.rabbitmq-password}"`
 `[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($pwd))`
 
 I am using PowerShell in this example. The first command line makes use of kubectl to retrieve the password in base64 value. The second line decodes the base64 value. Feel free to use any other way to decode the value.
