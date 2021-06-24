@@ -18,7 +18,8 @@ Note that I used the runtime version 1.0.1. Feel free to use a more recent runti
 To be cloud-neutral, I used a self-hosted RabbitMQ instance. To install it in your cluster:
 
 `helm repo update` 
-`helm install rabitmq stable/rabbitmq`
+
+`helm install rabitmq stable/rabbitmq --namespace microserviceapp`
 
 To retrieve the default password, run the following commands:
 
