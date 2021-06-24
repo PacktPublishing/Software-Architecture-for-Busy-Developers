@@ -8,7 +8,7 @@ spec:
   version: v1
   metadata:
   - name: host
-    value: "amqp://user:pwd@rabbitmq.default.svc.cluster.local:5672"
+    value: "amqp://user:pwd@rabbitmq.microserviceapp.svc.cluster.local:5672"
   - name: durable
     value: "false"
   - name: deletedWhenUnused
