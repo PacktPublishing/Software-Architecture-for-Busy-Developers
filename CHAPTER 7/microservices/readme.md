@@ -23,7 +23,7 @@ To be cloud-neutral, I used a self-hosted RabbitMQ instance. To install it in yo
 
 To retrieve the default password, run the following commands:
 
-`$pwd=kubectl get secret --namespace microserviceapp rabbitmq -o jsonpath="{.data.rabbitmq-password}"`
+`$pwd=kubectl get secret rabitmq-rabbitmq -n microserviceapp -o jsonpath="{.data.rabbitmq-password}"`
 `[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($pwd))`
 
 I am using PowerShell in this example. The first command line makes use of kubectl to retrieve the password in base64 value. The second line decodes the base64 value. Feel free to use any other way to decode the value.
