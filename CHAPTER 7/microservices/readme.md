@@ -19,7 +19,7 @@ To be cloud-neutral, I used a self-hosted RabbitMQ instance. To install it in yo
 
 `helm repo update` 
 
-`helm install rabitmq stable/rabbitmq --namespace microserviceapp`
+`helm install stable/rabbitmq --namespace microserviceapp`
 
 To retrieve the default password, run the following commands:
 
