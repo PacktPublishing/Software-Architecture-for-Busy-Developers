@@ -1,2 +1,2 @@
-# The-Hundred-Page-Software-Architecture-Book
-The Hundred Page Software Architecture Book, published by Packt
+# Software Architecture for Busy Developers
+Software Architecture for Busy Developers, published by Packt
