@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "packt-serverless-architecture": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

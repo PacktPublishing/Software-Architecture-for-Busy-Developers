@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: eventpublisher
+  namespace: microserviceapp
+  labels:
+    app: eventpublisher
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: eventpublisher
+  template:
+    metadata:
+      labels:
+        app: eventpublisher     
+    spec:
+      containers:
+      - name: eventpublisher
+        image: stephaneey/eventpublisher:dev
+        env:
+        - name: EvGridEndpoint
+          value: "YOURENDPOINT"
+        - name: EvGridAccessKey
+          value: "YOURKEY"
+        imagePullPolicy: Always

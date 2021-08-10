@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30309.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "packt-serverless-architecture", "packt-serverless-architecture\packt-serverless-architecture.csproj", "{7F7D2F93-2CA8-4A3E-9F10-362C451CEA5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "event-consumer", "event-consumer\event-consumer.csproj", "{8DCB8AFF-F0E1-4BE5-A92B-35C5B7AD8287}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F7D2F93-2CA8-4A3E-9F10-362C451CEA5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F7D2F93-2CA8-4A3E-9F10-362C451CEA5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F7D2F93-2CA8-4A3E-9F10-362C451CEA5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F7D2F93-2CA8-4A3E-9F10-362C451CEA5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DCB8AFF-F0E1-4BE5-A92B-35C5B7AD8287}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DCB8AFF-F0E1-4BE5-A92B-35C5B7AD8287}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DCB8AFF-F0E1-4BE5-A92B-35C5B7AD8287}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DCB8AFF-F0E1-4BE5-A92B-35C5B7AD8287}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4DD84A6C-CA6F-4BA1-BEFC-15E788D1C914}
+	EndGlobalSection
+EndGlobal
