@@ -54,3 +54,7 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 ## Get to Know the Author
 **Stéphane Eyskens**
 has a developer background and became a solution architect about a decade ago. As a cloud subject matter expert, he contributed to many digital transformation programs, helping organizations get better results out of their cloud investments. As an MVP, he is an active contributor to the Microsoft Tech Community and has worked on multiple open source projects available on GitHub. Stéphane is also a Pluralsight assessment author as well as the author of multiple books and online recordings.
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781801071598">https://packt.link/free-ebook/9781801071598 </a> </p>
